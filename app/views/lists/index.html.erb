@@ -1,0 +1,13 @@
+<h1>Lists</h1>
+
+  <% @lists.each do |list|%>
+    <div class="col-4">
+      <%= link_to list.name, list_path(list), class: 'text-decoration-none' %>
+    </div>
+  <% end %>
+
+<%= link_to 'New list', new_list_path, class: 'btn btn-sm btn-primary col-3 m-4'%>
+
+<%= link_to 'Movies', movies_path, class: 'btn btn-sm btn-primary col-3 m-4'%>
+
+<%# <%= link_to 'New Bookmarker', new_list_bookmarker_path, class: 'btn btn-sm btn-primary col-3 m-4'%>

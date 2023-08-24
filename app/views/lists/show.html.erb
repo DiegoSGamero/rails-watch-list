@@ -1,0 +1,19 @@
+<div class="container">
+  <h1 class="text-center"><%= @list.name %></h1>
+    <% @list.bookmarks.each do |bookmark|%>
+      <p>Comment: <%= bookmark.comment %></p>
+    <% end %>
+</div>
+
+<%# <% @list.bookmarks.each do |bookmark|%>
+<%# <%<div class="row"> %>
+<%# <% movie = Movie.find(bookmark.movie_id) %>
+  <%#    Movie: <%= movie.title %>
+  <%#    Comment: <%= bookmark.comment %>
+  <%#    </div>
+  <%#  <% end %>
+
+<div class="mx-auto w-50 row justify-content-around">
+  <%= link_to 'back', lists_path, class: 'btn btn-sm btn-primary col-3' %>
+  <%= link_to 'New bookmark', new_list_bookmark_path, class: 'btn btn-sm btn-danger col-3' %>
+</div>
