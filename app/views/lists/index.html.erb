@@ -1,16 +1,27 @@
-<div class="container">
-  <h1 class="text-center m-4">Lists</h1>
-    <div id="lists" class="d-flex flex-column mb-3 border rounded p-4">
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-md">
+      <a class="navbar-brand text-end" href="#"><i class="fa-light fa-rectangle-list" style="color: #486056;"><strong>Watch List</strong></i></a>
+
+  </div>
+</nav>
+  <div id="banner">
+    <h1 class="text-center m-8">Make movies lists your kind</h1>
+  </div>
+<div class="container p-4">
+  <h3 class="text-center m-4">My lists</h3>
+  <div id="list-container" class="d-flex justify-content-center">
+    <div id="list-card" class="d-flex flex-column mb-3 border rounded col-8">
       <% @lists.each do |list|%>
         <div class="d-flex justify-content-around align-items-center">
-          <%= link_to list.name.capitalize, list_path(list), class: 'text-decoration-none' %>
-          <%= link_to 'New Bookmark', new_list_bookmark_path(list), class: 'btn btn-primary m-4'%>
+            <%= link_to list.name.capitalize, list_path(list), class: 'text-decoration-none' %>
+            <%= link_to 'New Bookmark', new_list_bookmark_path(list), class: 'btn btn-primary m-4'%>
         </div>
       <% end %>
     </div>
-  <div class="row">
+  </div>
+  <div class="d-flex justify-content-around align-items-center">
     <%= link_to 'New list', new_list_path, class: 'btn btn-sm btn-primary col-3 m-4'%>
 
-    <%= link_to 'Movies', movies_path, class: 'btn btn-sm btn-primary col-3 m-4'%>
+    <%= link_to 'All movies', movies_path, class: 'btn btn-sm btn-primary col-3 m-4'%>
   </div>
 </div>
