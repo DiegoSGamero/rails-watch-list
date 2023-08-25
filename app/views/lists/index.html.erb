@@ -4,10 +4,9 @@
     <div class="col-4">
       <%= link_to list.name, list_path(list), class: 'text-decoration-none' %>
     </div>
+    <%= link_to 'New Bookmark', new_list_bookmark_path(list), class: 'btn btn-sm btn-primary col-3 m-4'%>
   <% end %>
 
 <%= link_to 'New list', new_list_path, class: 'btn btn-sm btn-primary col-3 m-4'%>
 
 <%= link_to 'Movies', movies_path, class: 'btn btn-sm btn-primary col-3 m-4'%>
-
-<%# <%= link_to 'New Bookmarker', new_list_bookmarker_path, class: 'btn btn-sm btn-primary col-3 m-4'%>

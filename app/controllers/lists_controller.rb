@@ -5,7 +5,9 @@ class ListsController < ApplicationController
     @lists = List.all
   end
 
-  def show; end
+  def show
+    @bookmarks = @list.bookmarks
+  end
 
   def new
     @list = List.new
