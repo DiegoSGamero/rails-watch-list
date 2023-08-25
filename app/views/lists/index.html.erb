@@ -1,12 +1,16 @@
-<h1>Lists</h1>
-
-  <% @lists.each do |list|%>
-    <div class="col-4">
-      <%= link_to list.name, list_path(list), class: 'text-decoration-none' %>
+<div class="container">
+  <h1 class="text-center m-4">Lists</h1>
+    <div id="lists" class="d-flex flex-column mb-3 border rounded p-4">
+      <% @lists.each do |list|%>
+        <div class="d-flex justify-content-around align-items-center">
+          <%= link_to list.name.capitalize, list_path(list), class: 'text-decoration-none' %>
+          <%= link_to 'New Bookmark', new_list_bookmark_path(list), class: 'btn btn-primary m-4'%>
+        </div>
+      <% end %>
     </div>
-    <%= link_to 'New Bookmark', new_list_bookmark_path(list), class: 'btn btn-sm btn-primary col-3 m-4'%>
-  <% end %>
+  <div class="row">
+    <%= link_to 'New list', new_list_path, class: 'btn btn-sm btn-primary col-3 m-4'%>
 
-<%= link_to 'New list', new_list_path, class: 'btn btn-sm btn-primary col-3 m-4'%>
-
-<%= link_to 'Movies', movies_path, class: 'btn btn-sm btn-primary col-3 m-4'%>
+    <%= link_to 'Movies', movies_path, class: 'btn btn-sm btn-primary col-3 m-4'%>
+  </div>
+</div>
