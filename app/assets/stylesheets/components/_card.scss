@@ -1,0 +1,64 @@
+h3{
+  color: #486056;
+  font-weight: bold;
+  font-size: 35px;
+}
+
+#card-list {
+  background-image: url('https://m.media-amazon.com/images/I/51CZlCzI9tL._SX258_BO1,204,203,200_QL70_ML2_.jpg');
+  background-size: cover;
+  background-position: center;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#card-list:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.custom-list-name {
+  padding-left: 8px;
+  padding-right: 8px;
+  background-color: #e0e0e0;
+  text-decoration: none;
+  color: #486056;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: bolder;
+  border-radius: 4px;
+  border: 1px solid #486056;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s, box-shadow 0.3s;
+  &:hover{
+    transform: translateY(-1px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    background-color: #486056;
+    color: #e0e0e0;
+  }
+  // background-image: radial-gradient(circle, #e0e0e0, #486056);
+}
+
+.card-btn {
+  padding: 4px;
+  background-color: #e0e0e0;
+  text-decoration: none;
+  color: #486056;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 4px;
+  border: 1px solid #486056;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s, box-shadow 0.3s;
+  &:hover{
+    transform: translateY(-1px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    background-color: #486056;
+    color: #e0e0e0;
+  }
+}

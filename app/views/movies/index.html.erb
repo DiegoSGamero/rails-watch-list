@@ -1,9 +1,15 @@
-<h1>Movies#index</h1>
-<p>Find me in app/views/movies/index.html.erb</p>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-md">
+      <a class="navbar-brand text-end" href="#"><i class="fa-light fa-rectangle-list" style="color: #486056;"><strong>Watch List</strong></i></a>
+  </div>
+</nav>
+<div class="movies-container">
+  <h1>Movies</h1>
   <% @movies.each do |movie|%>
     <div class="col-4">
       <%= movie.title %>
     </div>
   <% end %>
 
-<%= link_to 'Back', root_path, class: 'btn btn-sm btn-primary col-3 m-4'%>
+  <%= link_to 'Back', root_path, class: 'btn btn-sm btn-primary col-3 m-4'%>
+</div>
