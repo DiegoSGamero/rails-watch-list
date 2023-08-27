@@ -67,3 +67,52 @@
 .back-button {
   margin: 32px;
 }
+
+.show-btns {
+  margin-top: 24px;
+  margin-bottom: 32px;
+}
+
+.btn-show-back {
+  padding: 2px;
+  padding-left: 8px;
+  padding-right: 8px;
+  margin: 4px;
+  background-color: #486056;
+  text-decoration: none;
+  color: #e0e0e0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #486056;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s, box-shadow 0.3s;
+  &:hover{
+    transform: translateY(-1px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    background-color: #e0e0e0;
+    color: #486056;
+  }
+}
+
+.btn-show-new {
+  padding: 2px;
+  padding-left: 8px;
+  padding-right: 8px;
+  margin: 4px;
+  background-color: #486056;
+  text-decoration: none;
+  color: #e0e0e0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #486056;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s, box-shadow 0.3s;
+  &:hover{
+    transform: translateY(-1px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    background-color: #e0e0e0;
+    color: #486056;
+  }
+}

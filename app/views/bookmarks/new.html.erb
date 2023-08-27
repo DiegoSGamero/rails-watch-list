@@ -4,12 +4,25 @@
 
   </div>
 </nav>
-<div class="container">
-  <h1>Create a bookmark</h1>
-
-  <%= render "form", bookmark: @bookmark %>
-
-  <br>
-
-  <%= link_to 'Back to Lists', root_path, class: 'btn btn-sm btn-primary text-center'%>
+<div class="create-body">
+  <div class="create-content row justify-content-center">
+    <h1 class="text-center">Create a bookmark</h1>
+    <div class="new-form col-8 m-8">
+      <%= render "form", bookmark: @bookmark %>
+    </div>
+    <div class="text-center m-12 p-4 col-6">
+      <%= link_to root_path, class:"btn-show-back text-center p-2" do %>
+        <i class="fa-solid fa-rotate-left"></i> Back to lists
+      <% end %>
+    </div>
+    <div class="footer">
+      <div class="footer-links">
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+  </div>
 </div>

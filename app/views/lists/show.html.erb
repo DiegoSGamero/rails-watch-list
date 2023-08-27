@@ -7,21 +7,21 @@
 <div class="show-body">
   <div class="show-container row justify-content-center p-24">
     <h1 class="my-list col-12 m-4 text-center"><%= @list.name.capitalize %></h1>
-    <div class="border rounded col-8 m-8">
+    <div class="row border rounded col-8 m-8">
       <% @list.bookmarks.each do |bookmark|%>
-        <div>
-          <p class="m-2">Title: <%= bookmark.movie.title %></p>
-          <p class="m-2">Comment: <%= bookmark.comment %></p>
+        <div class="list-item">
+          <p class="item col-12 m-2">Title: <%= bookmark.movie.title %></p>
+          <p class="item col-12 m-2">Comment: <%= bookmark.comment %></p>
         </div>
       <% end %>
     </div>
   </div>
   <div class="d-flex justify-content-center show-btns">
-    <%= link_to lists_path, class: "btn btn-primary m-2" do %>
+    <%= link_to lists_path, class: "btn-show-back m-2" do %>
     <i class="fa-solid fa-rotate-left"></i> Back to lists
     <% end %>
 
-    <%= link_to new_list_bookmark_path(@list), class: "btn btn-warning m-2" do %>
+    <%= link_to new_list_bookmark_path(@list), class: "btn-show-new m-2" do %>
     <i class="fa-solid fa-plus"></i> New bookmark
     <% end %>
   </div>

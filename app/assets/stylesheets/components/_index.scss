@@ -24,3 +24,27 @@
     font-family: Arial, Helvetica, sans-serif;
   }
 }
+
+.show-body{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.show-container {
+  flex: 0.8;
+}
+
+.create-body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.create-content {
+  flex: 0.8;
+  padding: 16px;
+  h1 {
+    color: #486056;
+  }
+}
