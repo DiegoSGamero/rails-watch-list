@@ -3,3 +3,24 @@
 @import "avatar";
 @import "form_legend_clear";
 @import "navbar";
+
+.page-container {
+  margin: 0 auto;
+}
+
+#links-container {
+  margin-bottom: 28px;
+}
+
+.my-list {
+  margin: 12px;
+  color: #486056;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#lists-container {
+  h3 {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+}

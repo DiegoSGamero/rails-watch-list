@@ -1,0 +1,23 @@
+.footer {
+  border-top: 1px solid #486056;
+  background: rgb(255, 255, 255);
+  height: 80px;
+  padding: 28px;
+  color: rgba(0,0,0,0.3);
+}
+.footer-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ a {
+    color: #486056;
+    opacity: 0.6;
+    text-decoration: none;
+    font-size: 24px;
+    padding: 0px 10px;
+  }
+}
+
+.footer-links a:hover {
+  opacity: 1;
+}
